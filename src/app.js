@@ -10,10 +10,10 @@ teamMembers.forEach(member => {
   nav.appendChild(li);
 });
 
-function loadProfile(member) {
-  fetch(`src/components/${member}.html`)
-    .then(res => res.text())
-    .then(html => {
-      content.innerHTML = html;
-    });
-}
+function loadProfile(name) {
+    fetch(`src/components/${name}.html`)
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('profile-display').innerHTML = html;
+      });
+  }

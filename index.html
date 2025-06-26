@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Our Team Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Welcome to Our Team Portfolio</h1>
     <nav>
-      <ul id="team-nav"></ul>
+      <button onclick="loadProfile('lavanya')">Lavanya</button>
+      <button onclick="loadProfile('riya')">Riya</button>
+      <button onclick="loadProfile('sahil')">Sahil</button>
     </nav>
   </header>
 
-  <main id="content">
-    <!-- Team member pages will be loaded here -->
+  <main id="profile-display">
+    <p>Select a team member to view their profile.</p>
   </main>
 
   <script src="src/app.js"></script>
